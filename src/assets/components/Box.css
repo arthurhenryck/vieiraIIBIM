@@ -1,0 +1,35 @@
+.Box {
+    width: 720px;
+    height: 450px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white ;
+  }
+  
+  .Pessoa {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .circulo {
+    width: 70px;
+    height: 70px;
+    background-color: rgb(97, 97, 97);
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  
+  .pessoatxt {
+    margin-top: 35px;
+    margin-left: 10px;
+  }
+  
+  .Texto {
+    margin-left: 100px;
+    margin-right: 30px;
+  }
+  
+  .datahora {
+    margin-left: 100px;
+  }
