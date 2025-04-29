@@ -1,17 +1,17 @@
 import './Box.css'
 
-function Box( {produto} ) {
+function Box( {comentario, Nome, DataHora}) {
     return (
         <>
             <div className='Box'>
                 <div className='Pessoa'>
                     <div className='circulo'></div>
-                    <h2 className='pessoatxt'> Pessoa/Usuario</h2>
+                    <h2 className='pessoatxt'> {Nome}</h2>
                 </div>
                 <div className='Texto'>
-                    <p> {produto} </p>
+                    <p> {comentario} </p>
                 </div>
-                <div className='datahora'><p><strong> 12/04/2025 12:02 </strong></p></div>
+                <div className='datahora'><p><strong> {DataHora} </strong></p></div>
             </div>
         </>
     )
