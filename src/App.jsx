@@ -1,37 +1,14 @@
 import { useState } from "react";
 import './App.css'
 
-let pessoas=[]
 function App() {
-  const [ nome, setNome ] = useState("")
-  const [ idade, setIdade ] = useState("")
-
-  const handleClick = () => {
-    pessoas.push({id:pessoaslength,nome, idade})
-    console.log(pessoas)
-    setNome("")
-  }
-  const handleName = (e) => {
-    setName(e.target.value)
-  }
-  const handleIdade = (e) => {
-    setIdade(e.target.value)
-  }
   return(
     <>
-      <div className="card">
-        <input type="text"
-        placeholder="digite aqui"
-        onChange={handleName}
-        value={nome}/>
-          <button onClick={handleClick}>Clique aqui</button>
-          {pessoas.map(e=>(
-            <div key={e.name}>
-            <p>Nome: {e.name}</p>
-            <p>Idade: {e.idade}</p>
-            </div>
-          ))}
-      </div>    
+      <div className="box">
+      <div className="blue"></div>
+        <h2 className="titulo">Titulo</h2>
+        <p className="descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non lacus diam. Donec accumsan, velit quis accumsan tempus, mauris neque ultrices felis, id auctor dolor mi mattis sapien. Cras mattis dictum molestie. Duis vehicula risus libero, sed lacinia turpis volutpat ut. Pellentesque suscipit cursus tortor. Suspendisse id lectus ut mi lacinia euismod. Aenean vestibulum enim at consectetur dignissim. Maecenas auctor justo sed orci feugiat, eu pellentesque metus dapibus. Phasellus efficitur egestas tincidunt. Aliquam pulvinar varius tortor vel porta. Nam massa libero, consectetur ut maximus quis, semper sit amet nunc. Nam euismod orci et rhoncus iaculis.</p>
+      </div>
     </>
   )
 }
